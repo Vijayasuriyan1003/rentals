@@ -1,0 +1,100 @@
+{
+ "actions": [],
+ "allow_import": 1,
+ "allow_rename": 1,
+ "autoname": "format:DR-{###}",
+ "creation": "2024-06-24 11:52:31.003761",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "enable",
+  "first_name",
+  "license_number",
+  "fullname",
+  "column_break_dcza",
+  "last_name",
+  "phone",
+  "profile_pic",
+  "column_break_ghny"
+ ],
+ "fields": [
+  {
+   "default": "0",
+   "fieldname": "enable",
+   "fieldtype": "Check",
+   "label": "enable"
+  },
+  {
+   "fieldname": "first_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "first name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "license_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "license number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_dcza",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "last_name",
+   "fieldtype": "Data",
+   "label": "last name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "phone",
+   "fieldtype": "Data",
+   "label": "phone number"
+  },
+  {
+   "fieldname": "profile_pic",
+   "fieldtype": "Attach",
+   "label": "profile pic"
+  },
+  {
+   "fieldname": "fullname",
+   "fieldtype": "Data",
+   "is_virtual": 1,
+   "label": "fullname",
+   "options": "f\"{doc.first_name}{doc.last_name}\""
+  },
+  {
+   "fieldname": "column_break_ghny",
+   "fieldtype": "Column Break"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-25 10:06:12.178607",
+ "modified_by": "Administrator",
+ "module": "Rentals",
+ "name": "driver",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "first_name",
+ "track_changes": 1
+}

@@ -1,0 +1,95 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "format:RO-{MM}-{YYYY}-{###}",
+ "creation": "2024-06-25 11:20:58.664338",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "customer_name",
+  "contect_number",
+  "pickup_time",
+  "vehicle",
+  "column_break_intp",
+  "status",
+  "pickup_address",
+  "location"
+ ],
+ "fields": [
+  {
+   "fieldname": "customer_name",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "customer name",
+   "reqd": 1
+  },
+  {
+   "fieldname": "contect_number",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "contect number",
+   "reqd": 1
+  },
+  {
+   "fieldname": "pickup_time",
+   "fieldtype": "Datetime",
+   "in_list_view": 1,
+   "label": "pickup time",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_intp",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "new",
+   "fieldname": "status",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "label": "status",
+   "options": "new\naccepted\nrejected"
+  },
+  {
+   "fieldname": "pickup_address",
+   "fieldtype": "Small Text",
+   "label": "pickup address",
+   "reqd": 1
+  },
+  {
+   "fieldname": "vehicle",
+   "fieldtype": "Link",
+   "label": "vehicle",
+   "options": "vehicle"
+  },
+  {
+   "fieldname": "location",
+   "fieldtype": "Geolocation",
+   "label": "location"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-06-26 11:44:05.267430",
+ "modified_by": "Administrator",
+ "module": "Rentals",
+ "name": "ride order",
+ "naming_rule": "Expression",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
